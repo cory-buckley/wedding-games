@@ -19,13 +19,96 @@ body {
   width: 100%;
 }
 
-.swiper {
-  width: 75vw;
-  height: 75vw;
-  position: absolute;
-  left: calc(50% - 37.5vw);
-  top: calc(50% - 37.5vw);
+.title-text, .instructions-text {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  font-family: 'Staatliches', cursive;
+}
 
+.title-text {
+  color: #444444;
+}
+
+.instructions-text {
+  color: #888888;
+}
+
+@media all and (orientation:portrait) {
+/* Style adjustments for portrait mode goes here */
+  .swiper {
+    width: 80vw;
+    height: 80vw;
+    position: absolute;
+    left: calc(50% - 40vw);
+    top: calc(50% - 40vw);
+  }
+
+  .game-details ul {
+    font-size: 4vw;
+  }
+
+  .game-button {
+    font-size: 6vw;
+  }
+
+  .title-text {
+    font-size: 8vh;
+    top: 10vh;
+  }
+
+  .instructions-text {
+    font-size: 3vh;
+    bottom: 7vh;
+  }
+}
+
+@media all and (orientation:landscape) {
+  /* Style adjustments for landscape mode goes here */
+  .swiper {
+    width: 65vh;
+    height: 65vh;
+    position: absolute;
+    left: calc(50% - 32.5vh);
+    top: calc(50% - 35vh);
+  }
+
+  .game-details ul {
+    font-size: 4vh;
+  }
+
+  .game-button {
+    font-size: 6vh;
+  }
+
+  .title-text {
+    font-size: 8vh;
+    top: 4vh;
+  }
+
+  .instructions-text {
+    font-size: 3vh;
+    bottom: 3vh;
+  }
+}
+
+@media (min-aspect-ratio: 2/3) and (orientation:portrait) {
+  .swiper {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    left: calc(50% - 25vw);
+    top: calc(50% - 25vw);
+  }
+
+  .game-details ul {
+    font-size: 3vw;
+  }
+
+  .game-button {
+    font-size: 4vw;
+  }
 }
 
 .swiper-slide {
@@ -36,16 +119,16 @@ body {
 }
 
 .slide-1 {
-  background-color: #8E61C8;
+  background-color: #3d3a8d;
 }
 
 .slide-2 {
-  background-color: #00e0f7;
+  background-color: #8ac4c5;
 }
 
 .swiper-pagination {
-    margin-bottom: -8vw;
-    bottom: 0 !important;
+    position: absolute;
+    bottom: -8% !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -57,10 +140,58 @@ body {
   word-break: normal;
   color: white;
   width: 22.5%;
+  font-family: 'Staatliches', cursive;
 }
 
 .game-details ul {
   list-style-type: none;
-  font-size: 3vw;
-  padding-left: 0;
+  padding: 0;
+  margin:  0;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.game-button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  padding: 0;
+  margin:  0;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 40%;
+  height: 20%;
+  border-radius: 6px;
+  font-family: 'Staatliches', cursive;
+  border: 0;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+small {
+  font-size: 50%;
+  opacity: 0.5;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
 }

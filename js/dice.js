@@ -1,4 +1,4 @@
-var swiper = new Swiper(".gameSwiper", {
+var swiper = new Swiper(".game-swiper", {
   effect: "cube",
   grabCursor: true,
   cubeEffect: {

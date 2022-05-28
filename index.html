@@ -6,12 +6,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dice Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/style.css"/>
   </head>
   <body>
     <!-- Slider main container -->
-    <div class="swiper gameSwiper">
+    <div class="title-text">Dice Games</div>
+    <div class="swiper game-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
           <svg id="qwixxTitle" version="1.1" x="0px" y="0px" viewBox="0 0 226 70" width="80%" fill="#ffffff">
@@ -38,10 +42,11 @@
           <div class="game-details">
             <ul>
               <li>Ages 8+</li>
-              <li>2-5 Players</li>
+              <li>2 - 5 Players</li>
               <li>15 Minutes</li>
             </ul>
           </div>
+          <a class="game-button" href="https://cory-buckley.github.io/qwixx/?wedding">Play Game</a>
         </div>
         <div class="swiper-slide slide-2">
           <svg id="farkleTitle" version="1.1" x="0px" y="0px" viewBox="0 0 294 82" width="80%" fill="#ffffff">
@@ -85,9 +90,19 @@
               <li>20 Minutes</li>
             </ul>
           </div>
+          <a class="game-button" href="https://cory-buckley.github.io/farkle/">Play Game</a>
         </div>
       </div>
       <div class="swiper-pagination"></div>
+    </div>
+    <div class="instructions-text">
+      Thank you for attending our wedding!
+      <br/>
+      Swipe above to select a game
+      <br/>
+      <small>
+        Please report any bugs to <a href="mailto:corybuckley@gmail.com">corybuckley@gmail.com</a>
+      </small>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/dice.js"></script>
