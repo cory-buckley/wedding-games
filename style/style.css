@@ -67,19 +67,19 @@ body {
 @media all and (orientation:landscape) {
   /* Style adjustments for landscape mode goes here */
   .swiper {
-    width: 65vh;
-    height: 65vh;
+    width: 50vh;
+    height: 50vh;
     position: absolute;
-    left: calc(50% - 32.5vh);
-    top: calc(50% - 35vh);
+    left: calc(50% - 25vh);
+    top: calc(50% - 25vh);
   }
 
   .game-details ul {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 
   .game-button {
-    font-size: 6vh;
+    font-size: 4vh;
   }
 
   .title-text {
@@ -128,7 +128,7 @@ body {
 
 .swiper-pagination {
     position: absolute;
-    bottom: -8% !important;
+    bottom: -12% !important;
 }
 
 .swiper-pagination-bullet-active {
